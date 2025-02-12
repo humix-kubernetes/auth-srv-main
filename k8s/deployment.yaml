@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-srv-main
+spec:
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: auth-srv-main
+  template:
+    metadata:
+      labels:
+        app: auth-srv-main
+    spec:
+      containers:
+      - name: auth-srv-main
+        image: auth-srv-main
+        ports:
+        - containerPort: 8080
