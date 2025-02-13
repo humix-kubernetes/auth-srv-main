@@ -9,4 +9,4 @@ namespace: auth
 images:
 - name: auth-srv-main
   newName: blgianinis/auth-srv-main
-  newTag: v1
+  newTag: c754d236a980f43094b0e2e05fe86bfa6c64485c
